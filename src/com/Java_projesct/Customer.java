@@ -1,10 +1,10 @@
 package com.Java_projesct;
 
-public class Custumer {
+public class Customer {
     String name;
     public double money;
 
-    public Custumer(String name, double money) {
+    public Customer(String name, double money) {
         this.name = name;
         this.money = money;
     }

@@ -1,9 +1,8 @@
 package com.Java_projesct;
 
-import java.util.ArrayList;
 import java.util.List;
 
-public  class PayDesk extends Custumer {
+public  class PayDesk extends Customer {
     private int numberOfCasa;
     protected List<Product> byGoods;
 

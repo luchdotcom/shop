@@ -13,9 +13,9 @@ public class Receipt extends PayDesk {
     public List<Product> goods;
 
 
-    public Receipt(int numberOfCasa, List<Product> byGoods, long receiptId, Personal personId,
-                   LocalDateTime date, List<Product> goods) {
-        super(numberOfCasa, byGoods);
+    public Receipt(String name, double money, int numberOfCasa, List<Product> byGoods, long receiptId,
+                   Personal personId, LocalDateTime date, List<Product> goods) {
+        super(name, money, numberOfCasa, byGoods);
         this.receiptId = receiptId;
         this.personId = personId;
         this.date = LocalDateTime.now();

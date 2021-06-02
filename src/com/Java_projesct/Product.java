@@ -34,7 +34,7 @@ public class Product {
         this.GoodsId = id;
         this.name = name;
         this.singlePrice = singlePrice;
-        this.validData = validData;
+        this.validData = LocalDate.now();
         this.isEatable = isEatable;
         this.quantity=quantity;
     }
