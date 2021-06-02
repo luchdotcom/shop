@@ -13,14 +13,15 @@ public class Shop extends Product {
     private static List<Personal> personalList;
     private static List<Product> productList;
 
-    public Shop(long id, String name, double singlePrice, Category category, LocalDate validData, boolean isEatable, double markup, double markupOf, int dayOfValid) {
-        super(id, name, singlePrice, category, validData, isEatable);
+    public Shop(long id, String name, double singlePrice, Category category, LocalDate validData, boolean isEatable,
+                double quantity, double markup, double markupOf, int dayOfValid) {
+        super(id, name, singlePrice, category, validData, isEatable, quantity);
         this.markup = markup;
         this.markupOf = markupOf;
         this.dayOfValid = dayOfValid;
     }
 
-    private double cellPrice() {
+    public double cellPrice() {
         this.singlePrice = singlePrice * markup;
         if (ChronoUnit.DAYS.between(validData,LocalDate.now()) <= dayOfValid) {
             this.singlePrice = this.singlePrice - markupOf;
