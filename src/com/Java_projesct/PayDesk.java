@@ -3,9 +3,9 @@ package com.Java_projesct;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PayDesk  {
+public abstract class PayDesk  {
     private int numberOfCasa;
-    private List<Product> byGoods;
+    protected List<Product> byGoods;
 
     public PayDesk(int numberOfCasa, List<Product> byGoods) {
         this.numberOfCasa = numberOfCasa;

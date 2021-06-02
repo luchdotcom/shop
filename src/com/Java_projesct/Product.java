@@ -6,7 +6,6 @@ public class Product {
     public long GoodsId;
     public String name;
     double singlePrice;
-    Category category;
     LocalDate validData;
     boolean isEatable;
     double quantity;
@@ -23,10 +22,6 @@ public class Product {
         return singlePrice;
     }
 
-    public Category getCategory() {
-        return category;
-    }
-
     public LocalDate getValidData() {
         return validData;
     }
@@ -35,11 +30,10 @@ public class Product {
         return isEatable;
     }
 
-    public Product(long id, String name, double singlePrice, Category category, LocalDate validData, boolean isEatable, double quantity) {
+    public Product(long id, String name, double singlePrice, LocalDate validData, boolean isEatable, double quantity) {
         this.GoodsId = id;
         this.name = name;
         this.singlePrice = singlePrice;
-        this.category = category;
         this.validData = validData;
         this.isEatable = isEatable;
         this.quantity=quantity;

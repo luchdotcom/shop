@@ -13,9 +13,9 @@ public class Shop extends Product {
     private static List<Personal> personalList;
     private static List<Product> productList;
 
-    public Shop(long id, String name, double singlePrice, Category category, LocalDate validData, boolean isEatable,
+    public Shop(long id, String name, double singlePrice, LocalDate validData, boolean isEatable,
                 double quantity, double markup, double markupOf, int dayOfValid) {
-        super(id, name, singlePrice, category, validData, isEatable, quantity);
+        super(id, name, singlePrice, validData, isEatable, quantity);
         this.markup = markup;
         this.markupOf = markupOf;
         this.dayOfValid = dayOfValid;
