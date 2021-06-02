@@ -3,25 +3,25 @@ package com.Java_projesct;
 import java.time.LocalDate;
 
 public class Product {
-    public long id;
+    public long GoodsId;
     public String name;
-    double singleDeliveryPrice;
+    double singlePrice;
     Category category;
     LocalDate validData;
-    Foods food;
+    boolean isEatable;
 
-    public Product(long id, String name, double singleDeliveryPrice, Category category, LocalDate validData, Foods food) {
-        this.id = id;
+
+    public Product(long id, String name, double singlePrice, Category category, LocalDate validData, boolean isEatable) {
+        this.GoodsId = id;
         this.name = name;
-        this.singleDeliveryPrice = singleDeliveryPrice;
+        this.singlePrice = singlePrice;
         this.category = category;
         this.validData = validData;
-        this.food = food;
+        this.isEatable = isEatable;
     }
-    private double cellingPrice(Category category){
 
-    }
+    ///todo
     private boolean isFit(){
-        return false;
+        return validData.isAfter(LocalDate.now());
     }
 }
