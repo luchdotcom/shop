@@ -8,4 +8,12 @@ public class Custumer {
         this.name = name;
         this.money = money;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getMoney() {
+        return money;
+    }
 }
