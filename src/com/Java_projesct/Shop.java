@@ -8,8 +8,8 @@ import java.util.List;
 
 public class Shop extends Product {
     private final double markup;
-    private double markupOf;
-    private int dayOfValid;
+    private final double markupOf;
+    private final int dayOfValid;
     private static List<Personal> personalList;
     private static List<Product> productList;
 
@@ -27,10 +27,6 @@ public class Shop extends Product {
             this.singlePrice = this.singlePrice - markupOf;
         }
         return this.singlePrice;
-    }
-
-    // TODO: 1.6.2021 г.
-    private void marcProduct() {
     }
 
     private void saveReceipt(String filename, Receipt receipt) {
